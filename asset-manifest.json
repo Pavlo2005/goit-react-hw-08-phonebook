@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.cd2e038f.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.7e6a3b45.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.dffcaa09.js",
     "static/js/983.9b73bcb3.chunk.js": "/goit-react-hw-08-phonebook/static/js/983.9b73bcb3.chunk.js",
-    "static/js/868.ca6bb6e3.chunk.js": "/goit-react-hw-08-phonebook/static/js/868.ca6bb6e3.chunk.js",
+    "static/js/868.ec8cdcfc.chunk.js": "/goit-react-hw-08-phonebook/static/js/868.ec8cdcfc.chunk.js",
     "static/js/637.3f2ce2d4.chunk.js": "/goit-react-hw-08-phonebook/static/js/637.3f2ce2d4.chunk.js",
     "static/js/432.f2734547.chunk.js": "/goit-react-hw-08-phonebook/static/js/432.f2734547.chunk.js",
     "static/js/520.974920c9.chunk.js": "/goit-react-hw-08-phonebook/static/js/520.974920c9.chunk.js",
     "static/js/568.455c1d46.chunk.js": "/goit-react-hw-08-phonebook/static/js/568.455c1d46.chunk.js",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.cd2e038f.css.map": "/goit-react-hw-08-phonebook/static/css/main.cd2e038f.css.map",
-    "main.7e6a3b45.js.map": "/goit-react-hw-08-phonebook/static/js/main.7e6a3b45.js.map",
+    "main.dffcaa09.js.map": "/goit-react-hw-08-phonebook/static/js/main.dffcaa09.js.map",
     "983.9b73bcb3.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/983.9b73bcb3.chunk.js.map",
-    "868.ca6bb6e3.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/868.ca6bb6e3.chunk.js.map",
+    "868.ec8cdcfc.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/868.ec8cdcfc.chunk.js.map",
     "637.3f2ce2d4.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/637.3f2ce2d4.chunk.js.map",
     "432.f2734547.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/432.f2734547.chunk.js.map",
     "520.974920c9.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/520.974920c9.chunk.js.map",
@@ -20,6 +20,6 @@
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.7e6a3b45.js"
+    "static/js/main.dffcaa09.js"
   ]
 }
