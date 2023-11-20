@@ -60,7 +60,7 @@ export default function RegisterPage() {
                         <Field type="password" name="pasword" />
                         <ErrMessage name="pasword" component="div" />
                     </label>
-                    <button type="submit">Add contact</button>
+                    <button type="submit">Register</button>
                 </StyledForm>
             </Formik>
         </div>

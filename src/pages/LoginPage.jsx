@@ -52,7 +52,7 @@ export default function LoginPage() {
                         <Field type="password" name="pasword" />
                         <ErrMessage name="pasword" component="div" />
                     </label>
-                    <button type="submit">Add contact</button>
+                    <button type="submit">Log in</button>
                 </StyledForm>
             </Formik>
         </div>
