@@ -1,8 +1,10 @@
-import { lazy } from 'react';
+import { lazy, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from './Layout/Layout';
 import { RestrictedRoute } from './RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute';
+import { useDispatch } from 'react-redux';
+import { refreshUser } from 'redux/operations';
 
 
 const HomePage = lazy(() => import('pages/HomePage'));
@@ -12,6 +14,13 @@ const RegisterPage = lazy(() => import('pages/RegisterPage'));
 const NotFoundPage = lazy(() => import('pages/NotFoundPage'));
 
 export const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    console.log("refreshUser")
+    dispatch(refreshUser());
+  }, [dispatch]);
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>

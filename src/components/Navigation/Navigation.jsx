@@ -24,7 +24,7 @@ export const Navigation = () => {
       <Link to="/">Home</Link>
       {isLoggedIn && (
         <>
-          <Link to="/">Contacts</Link>
+          <Link to="/contacts">Contacts</Link>
           <button type="button" onClick={() => { dispatch(logOut()) }}>Log aut</button>
         </>
       )}
