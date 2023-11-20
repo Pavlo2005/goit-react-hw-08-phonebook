@@ -2,7 +2,7 @@ import { Contacts } from "components/Contacts/Contacts";
 import { PhoneForm } from "components/PhoneForm/PhoneForm";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { fetchContacts } from "redux/operations";
+import { fetchContacts } from "redux/contacts";
 
 export default function ContactsPage() {
     const dispatch = useDispatch();

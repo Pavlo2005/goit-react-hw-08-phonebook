@@ -1,10 +1,11 @@
 import { ErrMessage, StyledForm } from 'components/PhoneForm/PhoneForm.styled';
 import { Formik, Field } from 'formik';
+import { useDispatch } from 'react-redux';
+import { logIn } from 'redux/operations';
 import * as Yup from 'yup';
 
 
 const quizSchema = Yup.object().shape({
-    name: Yup.string().min(3, 'Too short!').required('This field is required!'),
     email: Yup.string().required('This field is required!'),
     pasword: Yup.string()
         .min(8, 'Min 8 mins')
@@ -13,9 +14,16 @@ const quizSchema = Yup.object().shape({
 });
 
 export default function LoginPage() {
+    const dispatch = useDispatch();
 
     const onLogin = newLogin => {
         console.log(newLogin);
+        dispatch(
+            logIn({
+                email: newLogin.email,
+                password: newLogin.pasword,
+            })
+        );
     };
 
     return (
@@ -24,7 +32,6 @@ export default function LoginPage() {
 
             <Formik
                 initialValues={{
-                    name: '',
                     email: '',
                     pasword: '',
                 }}
@@ -36,18 +43,13 @@ export default function LoginPage() {
             >
                 <StyledForm>
                     <label>
-                        Name
-                        <Field name="name" />
-                        <ErrMessage name="name" component="div" />
-                    </label>
-                    <label>
                         Email
                         <Field type="email" name="email" />
                         <ErrMessage name="email" component="div" />
                     </label>
                     <label>
                         Pasword
-                        <Field type="pasword" name="pasword" />
+                        <Field type="password" name="pasword" />
                         <ErrMessage name="pasword" component="div" />
                     </label>
                     <button type="submit">Add contact</button>

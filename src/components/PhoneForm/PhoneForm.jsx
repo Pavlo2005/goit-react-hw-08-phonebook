@@ -4,7 +4,7 @@ import { ErrMessage, StyledForm } from './PhoneForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { nanoid } from '@reduxjs/toolkit';
 import { valueContacts } from 'redux/selectors';
-import { addContacts } from 'redux/operations';
+import { addContacts } from 'redux/contacts';
 
 const quizSchema = Yup.object().shape({
     name: Yup.string().min(3, 'Too short!').required('This field is required!'),
