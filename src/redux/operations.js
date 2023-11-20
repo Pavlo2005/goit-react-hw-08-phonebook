@@ -2,7 +2,7 @@ import axios from "axios";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
 // axios.defaults.baseURL = "https://65551c8163cafc694fe772b0.mockapi.io/contacts/";
-axios.defaults.baseURL = 'https://goit-task-manager.herokuapp.com/';
+axios.defaults.baseURL = 'https://connections-api.herokuapp.com/';
 
 const setAuthHeader = token => {
     axios.defaults.headers.common.Authorization = `Bearer ${token}`;
@@ -42,12 +42,14 @@ export const logIn = createAsyncThunk(
     'auth/login',
     async (credentials, thunkAPI) => {
         try {
+            console.log(credentials);
             const res = await axios.post('/users/login', credentials);
             // After successful login, add the token to the HTTP header
             setAuthHeader(res.data.token);
             console.log(res.data);
             return res.data;
         } catch (error) {
+            console.log(error);
             return thunkAPI.rejectWithValue(error.message);
         }
     }
