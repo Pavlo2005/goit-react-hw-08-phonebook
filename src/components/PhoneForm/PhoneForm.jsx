@@ -1,6 +1,6 @@
 import { Formik, Field } from 'formik';
 import * as Yup from 'yup';
-import { ErrMessage, StyledForm } from './PhoneForm.styled';
+import { ErrMessage, IconPhone, IconUser, StyledField, StyledForm, StyledLabel, SubmitButton } from './PhoneForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { nanoid } from '@reduxjs/toolkit';
 import { valueContacts } from 'redux/selectors';
@@ -44,17 +44,19 @@ export const PhoneForm = () => {
                 }}
             >
                 <StyledForm>
-                    <label>
+                    <StyledLabel>
                         Name
-                        <Field name="name" />
+                        <IconUser/>
+                        <StyledField name="name"/>
                         <ErrMessage name="name" component="div" />
-                    </label>
-                    <label>
+                    </StyledLabel>
+                    <StyledLabel>
                         Number
-                        <Field type="number" name="number" />
+                        <IconPhone/>
+                        <StyledField type="numer" name="number" />
                         <ErrMessage name="number" component="div" />
-                    </label>
-                    <button type="submit">Add contact</button>
+                    </StyledLabel>
+                    <SubmitButton type="submit">Add contact</SubmitButton>
                 </StyledForm>
             </Formik>
         </div>

@@ -11,6 +11,8 @@ const theme = {
   colors: {
     white: '#fff',
     black: '#212121',
+    grayShadow: 'rgba(0, 0, 0, 0.3)',
+    delete: '#cb2b2bb8',
     green: 'green',
     blue: 'blue',
     orange: 'orange',
