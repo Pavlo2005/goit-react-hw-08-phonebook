@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { nanoid } from '@reduxjs/toolkit';
 import { valueContacts } from 'redux/selectors';
 import { addContacts } from 'redux/contacts';
+import toast from 'react-hot-toast';
 
 const quizSchema = Yup.object().shape({
     name: Yup.string().min(3, 'Too short!').required('This field is required!'),
@@ -21,10 +22,17 @@ export const PhoneForm = () => {
 
     const onAddPhone = newPhone => {
         if (contacts.find(contact => contact.name === newPhone.name)) {
-            alert(`${newPhone.name} is Olredy in contacts`)
+            toast.error(`${newPhone.name} is Olredy in contacts`)
         }
         else {
-            dispatch(addContacts({ ...newPhone, id: nanoid() }))
+            toast.promise(
+                dispatch(addContacts({ ...newPhone, id: nanoid() })),
+                {
+                    loading: 'Saving...',
+                    success: <b>Phone saved!</b>,
+                    error: <b>Phone could not save</b>,
+                }
+            );
         }
     };
 
