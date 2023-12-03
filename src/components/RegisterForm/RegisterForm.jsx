@@ -1,5 +1,5 @@
 import { ErrMessage, IconAt, IconUnlock, IconUser, StyledField, StyledForm, StyledLabel, SubmitButton } from 'components/PhoneForm/PhoneForm.styled';
-import { Formik, Field } from 'formik';
+import { Formik } from 'formik';
 import { useDispatch } from 'react-redux';
 import { UserRegister } from 'redux/operations';
 import * as Yup from 'yup';

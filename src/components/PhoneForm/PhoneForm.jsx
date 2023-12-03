@@ -1,4 +1,4 @@
-import { Formik, Field } from 'formik';
+import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { ErrMessage, IconPhone, IconUser, StyledField, StyledForm, StyledLabel, SubmitButton } from './PhoneForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
