@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.cd2e038f.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.c364d49c.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.35062cd7.js",
     "static/js/983.9b73bcb3.chunk.js": "/goit-react-hw-08-phonebook/static/js/983.9b73bcb3.chunk.js",
-    "static/js/868.043c3ef9.chunk.js": "/goit-react-hw-08-phonebook/static/js/868.043c3ef9.chunk.js",
+    "static/js/868.623326fa.chunk.js": "/goit-react-hw-08-phonebook/static/js/868.623326fa.chunk.js",
     "static/js/501.e3d73f19.chunk.js": "/goit-react-hw-08-phonebook/static/js/501.e3d73f19.chunk.js",
     "static/js/751.be5e7f8f.chunk.js": "/goit-react-hw-08-phonebook/static/js/751.be5e7f8f.chunk.js",
     "static/js/520.974920c9.chunk.js": "/goit-react-hw-08-phonebook/static/js/520.974920c9.chunk.js",
     "static/js/361.d7e707a3.chunk.js": "/goit-react-hw-08-phonebook/static/js/361.d7e707a3.chunk.js",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.cd2e038f.css.map": "/goit-react-hw-08-phonebook/static/css/main.cd2e038f.css.map",
-    "main.c364d49c.js.map": "/goit-react-hw-08-phonebook/static/js/main.c364d49c.js.map",
+    "main.35062cd7.js.map": "/goit-react-hw-08-phonebook/static/js/main.35062cd7.js.map",
     "983.9b73bcb3.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/983.9b73bcb3.chunk.js.map",
-    "868.043c3ef9.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/868.043c3ef9.chunk.js.map",
+    "868.623326fa.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/868.623326fa.chunk.js.map",
     "501.e3d73f19.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/501.e3d73f19.chunk.js.map",
     "751.be5e7f8f.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/751.be5e7f8f.chunk.js.map",
     "520.974920c9.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/520.974920c9.chunk.js.map",
@@ -20,6 +20,6 @@
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.c364d49c.js"
+    "static/js/main.35062cd7.js"
   ]
 }
